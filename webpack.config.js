@@ -83,5 +83,4 @@ module.exports = {
   },
   devtool: 'inline-source-map',
   target: 'web',
-
 }
