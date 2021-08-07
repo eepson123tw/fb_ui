@@ -55,12 +55,12 @@ module.exports = {
       }]
     }),
     new HtmlWebpackPlugin({ //一個html模板 產生多個html檔
-      title: 'FBUI開發',
+      title: 'FB介面開發',
       filename: 'index.html', //輸出名
       template: 'template/template.html', //輸入指定的資料夾與檔案
       viewport: 'width=640, user-scalable=no',
-      description: 'Webpack前端自動化開發，讓你熟悉現代前端工程師開發的方法',
-      Keywords: 'Webpack前端自動化開發、前端、工程師、線上教學、教學範例',
+      description: 'Webpack前端自動化開發，讓你熟悉現代前端工程師開發的方法!!',
+      Keywords: 'Webpack前端自動化開發+tailwind UI',
       chunks: ['vendor', 'index'], //指定入口js是哪個部分
     }),
   ],
