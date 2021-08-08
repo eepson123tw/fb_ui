@@ -93,3 +93,57 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+#story::-webkit-scrollbar{
+  display: none;
+}
+#stroy{
+  scrollbar-width: none;
+}
+
+.swiper-container {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  padding-left: 5px !important;
+}
+
+.swiper-slide {
+  width: auto !important;
+  margin-right: 0 !important;
+}
+
+.swiper-button-next {
+  background-image: url(https://bruce-fe-fb.web.app/image/right-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: center;
+  border-radius: 9999px;
+  background-color: #3e4042;
+  width: 36px !important;
+  height: 36px !important;
+  top: 29px !important;
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-button-prev {
+  background-image: url(https://bruce-fe-fb.web.app/image/left-arrow.svg);
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: center;
+  border-radius: 9999px;
+  background-color: #3e4042;
+  width: 36px !important;
+  height: 36px !important;
+  top: 29px !important;
+}
+
+.swiper-button-prev::after {
+  display: none;
+}
+
+.swiper-button-disabled {
+  opacity: 0 !important;
+}

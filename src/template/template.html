@@ -9,6 +9,8 @@
     rel="icon" type="image/x-icon" />
   <meta name="viewport" content="<%= htmlWebpackPlugin.options.viewport %>">
   <meta name="description" content="<%= htmlWebpackPlugin.options.description %>">
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <title>
     <%= htmlWebpackPlugin.options.title %>
   </title>
@@ -159,8 +161,214 @@
         </div>
       </div>
     </div>
-    <div class="max-w-[750px] w-full h-[200vh] mx-auto bg-blue-300">
-      <h2 class=" text-white">動態牆</h2>
+    <div class="max-w-[750px] w-full px-4 mx-auto dark:bg-gray-700">
+      <div class="relative mb-10">
+        <button class="absolute top-[calc(50%-20px)] -right-2 w-[30px] h-[30px] rounded-full bg-red-100 z-10">></button>
+        <div class="flex overflow-x-auto" id="story">
+          <div class="flex-1 px-[4px] min-w-[120px] cursor-pointer overflow-hidden">
+            <div class="img mb-2 overflow-hidden">
+              <img class=" block w-full object-cover" src="https://picsum.photos/id/1021/400/400" alt="圖片">
+            </div>
+            <button
+              class="rounded-full  w-[30px] h-[30px] text-md  relative -top-6 left-[calc(50%-10px)] border-black border-2 inline-block bg-fb text-white">+</button>
+            <p class=" text-center text-white">建立現實動態</p>
+          </div>
+          <div class="flex-1 px-[4px] min-w-[120px] cursor-pointer overflow-hidden relative">
+            <div class="w-full h-full overflow-hidden">
+              <img class=" block w-full  h-full object-cover hover:scale-110 transition duration-500"
+                src="https://picsum.photos/id/1021/500/500" alt="圖片">
+            </div>
+            <div
+              class=" absolute top-0 w-[calc(100%-8px)] h-full transition duration-300 bg-fb-card bg-gradient-to-b from-gray-500 to-transparent hover:bg-transparent">
+            </div>
+            <button
+              class="rounded-full  w-[30px] h-[30px] text-md  absolute top-5 left-5 border-black border-2 inline-block bg-fb text-white">A</button>
+            <p class=" text-center text-white absolute bottom-2 left-3">Allen</p>
+          </div>
+          <div class="flex-1 px-[4px] min-w-[120px] cursor-pointer overflow-hidden relative">
+            <div class="w-full h-full overflow-hidden">
+              <img class=" block w-full  h-full object-cover hover:scale-110 transition duration-500"
+                src="https://picsum.photos/id/1021/500/500" alt="圖片">
+            </div>
+            <div
+              class=" absolute top-0 w-[calc(100%-8px)] h-full transition duration-300 bg-fb-card bg-gradient-to-b from-gray-500 to-transparent hover:bg-transparent">
+            </div>
+            <button
+              class="rounded-full  w-[30px] h-[30px] text-md  absolute top-5 left-5 border-black border-2 inline-block bg-fb text-white">A</button>
+            <p class=" text-center text-white absolute bottom-2 left-3">Allen</p>
+          </div>
+          <div class="flex-1 px-[4px] min-w-[120px] cursor-pointer overflow-hidden relative">
+            <div class="w-full h-full overflow-hidden">
+              <img class=" block w-full  h-full object-cover hover:scale-110 transition duration-500"
+                src="https://picsum.photos/id/1021/500/500" alt="圖片">
+            </div>
+            <div
+              class=" absolute top-0 w-[calc(100%-8px)] h-full transition duration-300 bg-fb-card bg-gradient-to-b from-gray-500 to-transparent hover:bg-transparent">
+            </div>
+            <button
+              class="rounded-full  w-[30px] h-[30px] text-md  absolute top-5 left-5 border-black border-2 inline-block bg-fb text-white">A</button>
+            <p class=" text-center text-white absolute bottom-2 left-3">Allen</p>
+          </div>
+          <div class="flex-1 px-[4px] min-w-[120px] cursor-pointer overflow-hidden relative">
+            <div class="w-full h-full overflow-hidden">
+              <img class=" block w-full  h-full object-cover hover:scale-110 transition duration-500"
+                src="https://picsum.photos/id/1021/500/500" alt="圖片">
+            </div>
+            <div
+              class=" absolute top-0 w-[calc(100%-8px)] h-full transition duration-300 bg-fb-card bg-gradient-to-b from-gray-500 to-transparent hover:bg-transparent">
+            </div>
+            <button
+              class="rounded-full  w-[30px] h-[30px] text-md  absolute top-5 left-5 border-black border-2 inline-block bg-fb text-white">A</button>
+            <p class=" text-center text-white absolute bottom-2 left-3">Allen</p>
+          </div>
+          <div class="flex-1 px-[4px] min-w-[120px] cursor-pointer overflow-hidden relative">
+            <div class="w-full h-full overflow-hidden">
+              <img class=" block w-full  h-full object-cover hover:scale-110 transition duration-500"
+                src="https://picsum.photos/id/1021/500/500" alt="圖片">
+            </div>
+            <div
+              class=" absolute top-0 w-[calc(100%-8px)] h-full transition duration-300 bg-fb-card bg-gradient-to-b from-gray-500 to-transparent hover:bg-transparent">
+            </div>
+            <button
+              class="rounded-full  w-[30px] h-[30px] text-md  absolute top-5 left-5 border-black border-2 inline-block bg-fb text-white">A</button>
+            <p class=" text-center text-white absolute bottom-2 left-3">Allen</p>
+          </div>
+          <div class="flex-1 px-[4px] min-w-[120px] cursor-pointer overflow-hidden relative">
+            <div class="w-full h-full overflow-hidden">
+              <img class=" block w-full  h-full object-cover hover:scale-110 transition duration-500"
+                src="https://picsum.photos/id/1021/500/500" alt="圖片">
+            </div>
+            <div
+              class=" absolute top-0 w-[calc(100%-8px)] h-full transition duration-300 bg-fb-card bg-gradient-to-b from-gray-500 to-transparent hover:bg-transparent">
+            </div>
+            <button
+              class="rounded-full  w-[30px] h-[30px] text-md  absolute top-5 left-5 border-black border-2 inline-block bg-fb text-white">A</button>
+            <p class=" text-center text-white absolute bottom-2 left-3">Allen</p>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="p-5 bg-fb-card rounded-md mb-5">
+        <div class="  flex items-center mb-3">
+          <div class="img w-[50px] h-[50px] rounded-full overflow-hidden">
+            <img src="https://picsum.photos/id/1011/200/300" alt="圖片" class=" block object-cover">
+          </div>
+          <div class="text flex-1 px-5 ">
+            <input
+              class="w-full rounded-full p-1 outline-none border-none pl-2 text-white placeholder-white bg-gray-600"
+              type="text" placeholder="Allen，在想甚麼呢?
+            ">
+          </div>
+        </div>
+        <div class=" flex items-center  justify-between border-t-2 border-yellow-50 pt-2 ">
+          <div class="flex-1 flex items-center py-3 px-5  hover:bg-fb-input justify-center">
+            <img class="w-[30px] mr-2" src="https://bruce-fe-fb.web.app/image/left/watchingTv.svg" alt="圖片">
+            <p class="text-gray-200">直播視訊</p>
+          </div>
+          <div class="flex-1 flex items-center py-3 px-5  hover:bg-fb-input justify-center">
+            <img class="w-[30px] mr-2" src="https://bruce-fe-fb.web.app/image/left/activity.svg" alt="圖片">
+            <p class="text-gray-200">相片 / 影片</p>
+          </div>
+          <div class="flex-1 flex items-center py-3 px-5 hover:bg-fb-input  justify-center">
+            <img class="w-[30px] mr-2" src="https://bruce-fe-fb.web.app/image/photo.svg" alt="圖片">
+            <p class="text-gray-200">感受 / 活動</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="p-5 bg-fb-card rounded-md mb-5">
+        <div class="swiper-container mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <button class="flex  items-center border-yellow-50 border-2 p-2 rounded-3xl">
+                <div class="img mr-1">
+                  <img class="w-[30px] h-[30px]" src="https://bruce-fe-fb.web.app/image/feel.svg" alt="圖片">
+                </div>
+                <p class="text-white text-xs">建立包廂</p>
+              </button>
+            </div>
+            <div class="swiper-slide mx-5 ">
+              <img src="https://picsum.photos/id/1/50/50
+              " alt="" class=" rounded-full">
+            </div>
+            <div class="swiper-slide mx-5 ">
+              <img src="https://picsum.photos/id/1/50/50
+              " alt="" class=" rounded-full">
+            </div>
+            <div class="swiper-slide mx-5 ">
+              <img src="https://picsum.photos/id/1/50/50
+              " alt="" class=" rounded-full">
+            </div>
+            <div class="swiper-slide mx-5 ">
+              <img src="https://picsum.photos/id/1/50/50
+              " alt="" class=" rounded-full">
+            </div>
+            <div class="swiper-slide mx-5 ">
+              <img src="https://picsum.photos/id/1/50/50
+              " alt="" class=" rounded-full">
+            </div>
+
+            <div class="swiper-slide mx-5 ">
+              <img src="https://picsum.photos/id/1/50/50
+              " alt="" class=" rounded-full">
+            </div>
+            <div class="swiper-slide mx-5 ">
+              <img src="https://picsum.photos/id/1/50/50
+              " alt="" class=" rounded-full">
+            </div>
+            <div class="swiper-slide mx-5 ">
+              <img src="https://picsum.photos/id/1/50/50
+              " alt="" class=" rounded-full">
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+      <article class="p-5 mb-5 bg-fb-card rounded-md text-white hover:bg-gray-800">
+        <section>
+          <header class="flex items-center">
+            <div class="mr-3">
+              <img class="w-[50px]" src="https://bruce-fe-fb.web.app/image/left/friend.svg" alt="">
+            </div>
+            <div class="text-left flex items-start flex-wrap ">
+              <h2 class="w-full">allen</h2>
+              <p>5小時前</p>
+              <img class=" ml-1 w-[20px]" src="https://bruce-fe-fb.web.app/image/earth.svg" alt="">
+            </div>
+            <div class="ml-auto">
+              <img class="w-[20px]" src="https://bruce-fe-fb.web.app/image/more.svg" alt="">
+            </div>
+          </header>
+          <p class="p-5">哈啾!!!!!!!!!!!!!!!! 我把世界打飛了</p>
+          <main class="bg-[#eee5]">
+            <a href="#" class="w-full overflow-hidden">
+              <img src="https://picsum.photos/id/1055/1000/1000" alt="">
+            </a>
+            <p class="mx-3 px-5 text-black">wow! 你打噴嚏了</p>
+          </main>
+          <footer class="flex mt-3 border-t-2 border-white pt-2">
+            <div class="flex-1 flex items-center justify-center p-5 hover:bg-fb-active">
+              <img src="https://bruce-fe-fb.web.app/image/like.svg" class="w-[20px] mr-5" alt="">
+              <p>讚</p>
+            </div>
+            <div class="flex-1 flex items-center p-5 justify-center hover:bg-fb-active">
+              <img src="https://bruce-fe-fb.web.app/image/chat.svg" class="w-[20px] mr-5" alt="">
+              <p>留言</p>
+            </div>
+            <div class="flex-1 flex items-center p-5 justify-center hover:bg-fb-active">
+              <img src="https://bruce-fe-fb.web.app/image/share.svg" class="w-[20px] mr-5" alt="">
+              <p>分享</p>
+            </div>
+          </footer>
+        </section>
+      </article>
+      <div class="p-5 bg-fb-card rounded-md mb-5 animate-pulse text-white min-h-[10vh] hover:bg-gray-800">
+      </div>
+      <div class="p-5 bg-fb-card rounded-md mb-5 animate-pulse text-white min-h-[10vh] hover:bg-gray-800">
+      </div>
+    </div>
     </div>
     <div class="sm:block hidden max-w-[15%] w-full h-[90vh] sticky top-main-span  z-[1] p-2  dark:bg-yellow-400">
       <h2 class=" text-white mb-3 text-lg dark:text-black">聯絡人</h2>
@@ -281,6 +489,7 @@
       dom.classList.add('hidden')
     })
   }
+
 
 
 </script>
