@@ -12,7 +12,7 @@
     @apply w-[39px] h-[39px] p-2.5 ml-2 rounded-full bg-yellow-300  flex justify-center items-center text-black  lg:mx-3
   }
   .popover-box{
-    @apply bg-fb-popove absolute top-12 right-[0px] z-10 p-3 rounded-lg shadow-sm lg:p-5 w-[300px] lg:w-[360px] text-white select-none
+    @apply bg-fb-popove absolute top-12 right-[0px] z-10 p-3 rounded-lg shadow-sm lg:p-5 w-[300px] lg:w-[360px] text-white select-none 
   }
   .popover-box-dark{
     @apply bg-yellow-300 text-white absolute top-12 right-[0px] z-10 p-5 rounded-lg shadow-sm  w-[300px] lg:w-[360px]

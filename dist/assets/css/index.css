@@ -1,3 +1,95 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+
+@layer components{
+
+  .popover-btn{
+    @apply w-[39px] h-[39px] p-2.5 ml-2 rounded-full bg-fb-popove  flex justify-center items-center text-white lg:mx-3
+  }
+  .popover-btn-dark{
+    @apply w-[39px] h-[39px] p-2.5 ml-2 rounded-full bg-yellow-300  flex justify-center items-center text-black  lg:mx-3
+  }
+  .popover-box{
+    @apply bg-fb-popove absolute top-12 right-[0px] z-10 p-3 rounded-lg shadow-sm lg:p-5 w-[300px] lg:w-[360px] text-white select-none
+  }
+  .popover-box-dark{
+    @apply bg-yellow-300 text-white absolute top-12 right-[0px] z-10 p-5 rounded-lg shadow-sm  w-[300px] lg:w-[360px]
+  }
+}
+
+
+body::-webkit-scrollbar{
+  background-color: aliceblue;
+  width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: #000;
+}
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #000;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #000;
+}
+input:checked + .slider:before {
+  background-color: #fff;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px 5px #fff;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
